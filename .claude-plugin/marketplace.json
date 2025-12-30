@@ -1,0 +1,15 @@
+{
+  "name": "lupuletic",
+  "description": "Claude Code plugins by lupuletic",
+  "owner": {
+    "name": "lupuletic",
+    "url": "https://github.com/lupuletic"
+  },
+  "plugins": [
+    {
+      "name": "year-review",
+      "description": "Generate a visual Year in Review summary of your Claude Code usage with AI insights",
+      "source": "./plugins/year-review"
+    }
+  ]
+}

@@ -96,24 +96,23 @@ Sun ████████████████████  383
 
 ## Installation
 
+### Option 1: Plugin Marketplace (Recommended)
+
 ```bash
-# Create the skill directory
-mkdir -p ~/.claude/skills/year-review
-
-# Download the files
-curl -o ~/.claude/skills/year-review/SKILL.md \
-  https://raw.githubusercontent.com/lupuletic/claude-code-year-review/main/skills/year-review/SKILL.md
-
-curl -o ~/.claude/skills/year-review/year_review.py \
-  https://raw.githubusercontent.com/lupuletic/claude-code-year-review/main/skills/year-review/year_review.py
+/plugin marketplace add lupuletic/claude-code-year-review
+/plugin install year-review
 ```
 
-Or clone the repo:
+### Option 2: Manual Install
 
 ```bash
-git clone https://github.com/lupuletic/claude-code-year-review.git
-mkdir -p ~/.claude/skills
-ln -s $(pwd)/claude-code-year-review/skills/year-review ~/.claude/skills/year-review
+mkdir -p ~/.claude/skills/year-review
+
+curl -so ~/.claude/skills/year-review/SKILL.md \
+  https://raw.githubusercontent.com/lupuletic/claude-code-year-review/main/plugins/year-review/skills/year-review/SKILL.md
+
+curl -so ~/.claude/skills/year-review/year_review.py \
+  https://raw.githubusercontent.com/lupuletic/claude-code-year-review/main/plugins/year-review/skills/year-review/year_review.py
 ```
 
 ## Usage
@@ -142,17 +141,9 @@ The skill reads from local Claude Code data files:
 
 A Python script extracts raw statistics as JSON. Claude then renders a visual summary and generates personalized insights based on your patterns.
 
-## Privacy
-
-- **100% local**: No data leaves your machine
-- **Anonymized**: Project names are never displayed
-- **Aggregate only**: Shows statistics, not individual prompts
-- **Privacy-filtered**: Sensitive keywords filtered from analysis
-
 ## Limitations
 
 - Stats tracking started in Claude Code v2.0.64 (~November 2025)
-- Data retention is approximately 30-45 days
 - Lines of code only tracked for Edit/Write tool operations
 
 ## License

@@ -1,0 +1,17 @@
+{
+  "name": "year-review",
+  "version": "1.0.0",
+  "description": "Claude Code Year in Review - Generate a visual summary of your usage stats with AI insights, code impact, tech stack breakdown, and personalized coder title",
+  "author": {
+    "name": "lupuletic",
+    "url": "https://github.com/lupuletic"
+  },
+  "repository": "https://github.com/lupuletic/claude-code-year-review",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "year-in-review",
+    "usage-stats",
+    "developer-tools"
+  ]
+}
